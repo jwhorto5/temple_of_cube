@@ -8,6 +8,7 @@ acc = 0.3;
 grav = 0.3;
 max_speed = 6;
 jump_speed = 8;
+min_jump_speed = 4;
 
 //powerup variables
 max_jumps = 1;

@@ -4,7 +4,8 @@
 //inputs
 var key_left = global.controls[player_id, ctls.left];
 var key_right = global.controls[player_id, ctls.right];
-var key_jump = global.controls[player_id, ctls.jump_pressed];
+var key_jump = global.controls[player_id, ctls.jump];
+var key_jump_pressed = global.controls[player_id, ctls.jump_pressed];
 var key_action = global.controls[player_id, ctls.action];
 
 var key_restart = keyboard_check_pressed(ord("R"));
@@ -22,12 +23,13 @@ if (abs(hsp) < 0.1) hsp = 0;
 
 vsp += grav;
 
-if (key_jump && jumps > 0)
+if (key_jump_pressed && jumps > 0)
 {
 	vsp = -(jump_speed + abs(hsp/4));
 	jumps--;
 	jumped = true;
 }
+if (!key_jump) vsp = max(vsp, -min_jump_speed);
 
 if (place_meeting(x+hsp, y, collidable_objects))
 {
