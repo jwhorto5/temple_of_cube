@@ -26,6 +26,7 @@ if (key_jump && jumps > 0)
 {
 	vsp = -(jump_speed + abs(hsp/4));
 	jumps--;
+	jumped = true;
 }
 
 if (place_meeting(x+hsp, y, collidable_objects))
@@ -62,6 +63,9 @@ if (place_meeting(x, y+vsp, collidable_objects))
 		}
 		clean_room(tilemap);
 	}
+	
+	jumped = false;
+	alarm[0] = 10;
 }
 
 y += vsp;

@@ -12,4 +12,3 @@ if (place_meeting(x, y-sprite_height, tilemap))
 }
 
 power_index = irandom(5);
-power_index = 1;
