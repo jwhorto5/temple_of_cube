@@ -34,10 +34,12 @@
   },
   "name":"Temple Of Cube",
   "resources":[
-    {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
+    {"id":{"name":"block","path":"objects/block/block.yy",},},
     {"id":{"name":"player","path":"objects/player/player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"placeholder","path":"sprites/placeholder/placeholder.yy",},},
+    {"id":{"name":"tile_set_placeholder","path":"sprites/tile_set_placeholder/tile_set_placeholder.yy",},},
+    {"id":{"name":"temple","path":"tilesets/temple/temple.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

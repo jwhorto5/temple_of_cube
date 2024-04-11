@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object1",
+  "%Name":"block",
   "eventList":[],
   "managed":true,
-  "name":"Object1",
+  "name":"block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"placeholder",
+    "path":"sprites/placeholder/placeholder.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

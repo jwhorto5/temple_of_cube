@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Object1","order":1,"path":"objects/Object1/Object1.yy",},
+    {"name":"block","order":1,"path":"objects/block/block.yy",},
+    {"name":"tile_set_placeholder","order":1,"path":"sprites/tile_set_placeholder/tile_set_placeholder.yy",},
   ],
 }
