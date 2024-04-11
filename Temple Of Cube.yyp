@@ -35,8 +35,10 @@
   "name":"Temple Of Cube",
   "resources":[
     {"id":{"name":"block","path":"objects/block/block.yy",},},
+    {"id":{"name":"generator","path":"objects/generator/generator.yy",},},
     {"id":{"name":"player","path":"objects/player/player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"generate_room","path":"scripts/generate_room/generate_room.yy",},},
     {"id":{"name":"placeholder","path":"sprites/placeholder/placeholder.yy",},},
     {"id":{"name":"tile_set_placeholder","path":"sprites/tile_set_placeholder/tile_set_placeholder.yy",},},
     {"id":{"name":"temple","path":"tilesets/temple/temple.yy",},},

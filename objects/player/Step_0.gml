@@ -34,6 +34,7 @@ if (place_meeting(x+hsp, y, tilemap))
 	{
 		x += sign(hsp);
 	}
+	hsp = 0;
 }
 
 x += hsp;
@@ -44,6 +45,8 @@ if (place_meeting(x, y+vsp, tilemap))
 	{
 		y += sign(vsp);
 	}
+	vsp = 0;
+	jumps = 1;
 }
 
 y += vsp;

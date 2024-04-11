@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"block","order":1,"path":"objects/block/block.yy",},
+    {"name":"generator","order":2,"path":"objects/generator/generator.yy",},
     {"name":"tile_set_placeholder","order":1,"path":"sprites/tile_set_placeholder/tile_set_placeholder.yy",},
   ],
 }

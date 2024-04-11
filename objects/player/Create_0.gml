@@ -4,10 +4,10 @@
 //physics variables
 hsp = 0;
 vsp = 0;
-acc = 0.1;
+acc = 0.2;
 grav = 0.1;
 max_speed = 4;
-jump_speed = 3;
+jump_speed = 4;
 
 //other variables
 jumps = 0;
