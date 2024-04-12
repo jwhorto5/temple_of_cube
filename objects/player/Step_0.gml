@@ -23,13 +23,20 @@ if (abs(hsp) < 0.1) hsp = 0;
 
 vsp += grav;
 
+x %= room_width + 16;
+if (x <= -16) x = room_width;
+
 if (key_jump_pressed && jumps > 0)
 {
 	vsp = -(jump_speed + abs(hsp/4));
 	jumps--;
 	jumped = true;
 }
-if (!key_jump) vsp = max(vsp, -min_jump_speed);
+if (!key_jump)
+{
+	if (!upside_down) vsp = max(vsp, -min_jump_speed);
+	else vsp = min(vsp, min_jump_speed);
+}
 
 if (place_meeting(x+hsp, y, collidable_objects))
 {
@@ -120,10 +127,3 @@ if (has_block && key_action)
 {
 	instance_create_layer(x,y+sprite_height, "Instances", block)
 }
-
-//var collisions = move_and_collide(hsp,vsp,tilemap); //thank you gamemaker for doing the work for me
-//if (array_length(collisions) > 0)
-//{
-//	vsp = 0; //reset velocity on collision
-//	jumps = 1;
-//}

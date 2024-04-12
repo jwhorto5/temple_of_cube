@@ -25,5 +25,5 @@ jumped = false;
 //get the tilemap
 tilemap = layer_tilemap_get_id("foreground");
 
-//objects that have normal collisions
+//any object put in this array becomes collidable
 collidable_objects = [ tilemap, player, block, spawner ];
