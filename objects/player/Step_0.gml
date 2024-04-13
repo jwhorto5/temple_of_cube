@@ -8,11 +8,6 @@ var key_jump = global.controls[player_id, ctls.jump];
 var key_jump_pressed = global.controls[player_id, ctls.jump_pressed];
 var key_action = global.controls[player_id, ctls.action];
 
-var key_restart = keyboard_check_pressed(ord("R"));
-
-//debugging
-if (key_restart) game_restart();
-
 //movement
 if (key_left) hsp -= acc;
 else if (key_right) hsp += acc;
@@ -116,6 +111,13 @@ if (place_meeting(x+hsp, y+vsp, powerup))
 		case 5: has_block = true; break;
 	}
 	instance_destroy(powerup);
+}
+
+//hitting the goal
+if (place_meeting(x+hsp, y+vsp, goal))
+{
+	global.scores[player_id]++;
+	room_restart();
 }
 
 if (expanding)

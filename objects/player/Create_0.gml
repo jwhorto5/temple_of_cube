@@ -27,3 +27,6 @@ tilemap = layer_tilemap_get_id("foreground");
 
 //any object put in this array becomes collidable
 collidable_objects = [ tilemap, block, spawner ];
+
+//shader for each player
+shaders = [sh_player_1, sh_player_2, sh_player_3, sh_player_4];
