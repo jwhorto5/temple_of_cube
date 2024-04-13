@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 //inputs
 var key_left = global.controls[player_id, ctls.left];
 var key_right = global.controls[player_id, ctls.right];
@@ -69,7 +66,7 @@ if (place_meeting(x, y+vsp, collidable_objects))
 	}
 	
 	jumped = false;
-	alarm[0] = 10;
+	alarm[0] = 10; //too lenient?
 }
 
 y += vsp;
@@ -129,3 +126,10 @@ if (has_block && key_action)
 {
 	instance_create_layer(x,y+sprite_height, "Instances", block)
 }
+
+//for later :)
+//if (player_id = 0)
+//{
+//	layer_hspeed("foreground", cos(layer_speed))
+//	layer_speed += 0.01;
+//}
