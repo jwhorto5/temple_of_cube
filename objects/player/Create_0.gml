@@ -19,6 +19,10 @@ has_block = false;
 jumps = 0;
 jumped = false;
 layer_speed = 0;
+dir = 1;
+current_spr = 0;
+collided = true;
+base_scale = 1;
 
 //get the tilemap
 tilemap = layer_tilemap_get_id("foreground");

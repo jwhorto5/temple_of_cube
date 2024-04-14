@@ -18,9 +18,5 @@ function generate_room(start_prob, prob_diff, iterations) {
 		else start_prob += prob_diff;
 	}
 	
-	//step 2: cutting
-	repeat (iterations)
-	{
-		clean_room(tilemap);
-	}
+	clean_room(tilemap);
 }

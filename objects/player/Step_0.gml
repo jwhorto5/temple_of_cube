@@ -6,8 +6,16 @@ var key_jump_pressed = global.controls[player_id, ctls.jump_pressed];
 var key_action = global.controls[player_id, ctls.action];
 
 //movement
-if (key_left) hsp -= acc;
-else if (key_right) hsp += acc;
+if (key_left)
+{
+	hsp -= acc;
+	dir = -1;
+}
+else if (key_right)
+{
+	hsp += acc;
+	dir = 1;
+}
 else hsp -= sign(hsp) * acc;
 
 hsp = clamp(hsp, -max_speed, max_speed);
@@ -20,8 +28,8 @@ if (x <= -16) x = room_width;
 
 if (key_jump_pressed && jumps > 0)
 {
-	vsp = -(jump_speed + abs(hsp/4));
 	jumps--;
+	alarm[1] = 3;
 	jumped = true;
 }
 if (!key_jump)
@@ -49,11 +57,19 @@ if (place_meeting(x, y+vsp, collidable_objects))
 	}
 	if (upside_down)
 	{
-		if (vsp < 0) jumps = max_jumps;
+		if (vsp < 0)
+		{
+			if (alarm[1] <= 0) jumps = max_jumps;
+			collided = true;
+		}
 	}
 	else
 	{
-		if (vsp > 0) jumps = max_jumps;
+		if (vsp > 0)
+		{
+			if (alarm[1] <= 0) jumps = max_jumps;
+			collided = true;
+		}
 	}
 	vsp = 0;
 	if (can_break)
@@ -64,10 +80,10 @@ if (place_meeting(x, y+vsp, collidable_objects))
 		}
 		clean_room(tilemap);
 	}
-	
 	jumped = false;
 	alarm[0] = 10; //too lenient?
 }
+else collided = false;
 
 y += vsp;
 
@@ -85,16 +101,14 @@ if (place_meeting(x+hsp, y+vsp, powerup))
 		case 1:
 		{
 			can_break = true;
-			image_xscale *= 1.5;
-			image_yscale *= 1.5;
+			base_scale *= 1.5;
 			break;	
 		}
 		case 2: expanding = true; break;
 		case 3:
 		{
 			is_small = true;
-			image_xscale *= 0.6;
-			image_yscale *= 0.6;
+			base_scale *= 0.6;
 			jump_speed += 2;
 			break;
 		}
@@ -119,13 +133,27 @@ if (place_meeting(x+hsp, y+vsp, goal))
 
 if (expanding)
 {
-	image_xscale *= 1.01;
-	image_yscale *= 1.01;
+	base_scale *= 1.01;
 }
 if (has_block && key_action)
 {
 	instance_create_layer(x,y+sprite_height, "Instances", block)
 }
+
+image_speed = 1;
+
+if (alarm[1] > 0) current_spr = 3;
+else if (!collided)
+{
+	current_spr = 2;
+	if (image_index >= image_number - 1) image_speed = 0;
+}
+else if (hsp != 0) current_spr = 1;
+else current_spr = 0;
+
+sprite_index = input.sprite[player_id, current_spr];
+image_xscale = base_scale * dir;
+image_yscale = upside_down ? -base_scale : base_scale;
 
 //for later :)
 //if (player_id = 0)
