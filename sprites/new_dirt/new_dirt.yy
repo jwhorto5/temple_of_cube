@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"tile_set_sprites",
+    "path":"folders/Sprites/tile_set_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

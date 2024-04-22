@@ -1,0 +1,1 @@
+///@description landing squat

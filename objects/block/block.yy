@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
+    "name":"placed_brick",
+    "path":"sprites/placed_brick/placed_brick.yy",
   },
   "spriteMaskId":null,
   "visible":true,

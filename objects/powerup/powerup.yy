@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
+    "name":"spr_powerup",
+    "path":"sprites/spr_powerup/spr_powerup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
+    "name":"spawn_platform",
+    "path":"sprites/spawn_platform/spawn_platform.yy",
   },
   "spriteMaskId":null,
   "visible":true,

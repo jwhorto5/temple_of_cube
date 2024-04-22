@@ -1,0 +1,1 @@
+//draw_sprite(bg_sky, image_index, camera_get_view_x(camera_get_active()), camera_get_view_y(camera_get_active()));

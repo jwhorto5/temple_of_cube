@@ -19,7 +19,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":30,
+  "height":34,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"169f5ce8-516a-44b7-b3c8-20983b9d44a0","blendMode":0,"displayName":"default","isLocked":false,"name":"169f5ce8-516a-44b7-b3c8-20983b9d44a0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -47,8 +47,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"amogus",
+    "path":"folders/Sprites/characters/amogus.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -106,8 +106,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":11,
-    "yorigin":22,
+    "xorigin":12,
+    "yorigin":24,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -117,5 +117,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":22,
+  "width":26,
 }

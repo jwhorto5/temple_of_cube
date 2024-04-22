@@ -1,4 +1,3 @@
-//alarm 0: coyote jumping
+///@description coyote jumping
 
-//if (jumps == max_jumps)
-jumps--;
+if (jumps == max_jumps) jumps--;

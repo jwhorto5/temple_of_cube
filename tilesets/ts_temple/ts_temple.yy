@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"temple",
-    "path":"sprites/temple/temple.yy",
+    "name":"spr_temple",
+    "path":"sprites/spr_temple/spr_temple.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
