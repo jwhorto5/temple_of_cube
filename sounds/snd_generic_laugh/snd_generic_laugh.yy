@@ -13,7 +13,7 @@
   "name":"snd_generic_laugh",
   "parent":{
     "name":"sfx",
-    "path":"folders/Sounds/sfx.yy",
+    "path":"folders/Shaders/Sounds/sfx.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

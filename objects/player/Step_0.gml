@@ -200,7 +200,7 @@ else if (grounded && hsp != 0)
 else if (key_up)
 {
 	current_spr = 4;
-	if (sprite_index != randall_taunt)
+	if (sprite_index != randall_taunt && sprite_index != bob_taunt)
 	{
 		if (round(image_index) >= sprite_get_number(sprite_index)) image_index = 2;
 	}

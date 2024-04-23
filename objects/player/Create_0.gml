@@ -41,5 +41,6 @@ tilemap = layer_tilemap_get_id("foreground");
 collidable_objects = [ tilemap, block, spawner ];
 
 sprite_index = input.sprite[player_id, current_spr];
+looping_taunts = [randall_taunt, bob_taunt];
 
 alarm[3] = 20;

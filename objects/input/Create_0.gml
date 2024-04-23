@@ -18,13 +18,18 @@ char =
 	[orange_idle, orange_walk, orange_jump, orange_squat, orange_taunt, orange_shove],
 	[green_idle, green_walk, green_jump, green_squat, green_taunt, green_shove],
 	[purple_idle, purple_walk, purple_jump, purple_squat, purple_taunt, purple_shove],
+	[nuke_idle, nuke_walk, nuke_jump, nuke_squat, nuke_taunt, nuke_shove],
+	[volt_idle, volt_walk, volt_jump, volt_squat, volt_taunt, volt_shove],
+	[duke_idle, duke_walk, duke_jump, duke_squat, duke_taunt, duke_shove],
 	[amogus_idle, amogus_walk_alt, amogus_jump, amogus_squat, amogus_taunt, amogus_shove],
 	[bob_idle, bob_walk, bob_jump, bob_squat, bob_taunt, bob_shove],
 	[jd_idle, jd_walk, jd_jump, jd_squat, jd_taunt, jd_shove],
 	[pear_idle, pear_walk, pear_jump, pear_squat, pear_taunt, pear_shove],
+	[jen_idle, jen_walk, jen_jump, jen_squat, jen_taunt, jen_shove],
 	[randall_idle, randall_walk, randall_jump, randall_squat,  randall_taunt, randall_shove],
-	[blob_idle, blob_walk, blob_jump, blob_squat, blob_taunt, blob_shove],
+	[captain_idle, captain_walk, captain_jump, captain_squat, captain_taunt, captain_shove],
 	[death_idle, death_walk, death_jump, death_squat, death_taunt, death_shove],
+	[blob_idle, blob_walk, blob_jump, blob_squat, blob_taunt, blob_shove],
 ];
 
 sprite[0,0] = char[0,0];
@@ -56,19 +61,25 @@ sprite[3,4] = char[0,4];
 sprite[3,5] = char[0,5];
 
 taunt_sounds = [
+	snd_generic_laugh,	// generics
 	snd_generic_laugh,
 	snd_generic_laugh,
 	snd_generic_laugh,
 	snd_generic_laugh,
 	snd_generic_laugh,
-	snd_generic_laugh,
-	snd_amogus_twerk,
-	snd_bob_moan,
-	snd_milk,
-	snd_pear_master,
-	snd_awesome_sound,
-	snd_blob_yapping,
-	snd_death_scream,
+	
+	snd_generic_laugh,	// nuke
+	snd_generic_laugh,	// volt
+	snd_generic_laugh,	// duke
+	snd_amogus_twerk,	// amogus
+	snd_bob_moan,		// bob
+	snd_milk,			// jelly donut
+	snd_pear_master,	// pear
+	snd_generic_laugh,	// jennifer
+	snd_awesome_sound,	// randall
+	snd_awesome_sound,	// night captain
+	snd_death_scream,	// death
+	snd_blob_yapping,	//blob from de blob
 ];
 
 current_taunt_sound = [
